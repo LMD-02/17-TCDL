@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TraCuuDieuLuat.Views.Homepage"
+             Title="Trang chủ">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="logoapp.png" />
+            <Label Text="Welcome to App Luật Lâm Nghiệp"
+                FontSize="18" FontAttributes="None"
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Tại đây bạn có thể tra cứu các điều luật thuộc nghị định 35 của chính phủ " Padding="14, 30, 14 ,7"
+                FontSize="15" FontAttributes="None"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                 />
+            <Label Text="QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC LÂM NGHIỆP " Padding="40,0,40,10"
+                FontSize="14" FontAttributes="None"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                 />
+            <Button Clicked="Button_Clicked" Margin="90, 34, 90, 0" BackgroundColor="#1ead6e" Text="Tra cứu ngay"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
