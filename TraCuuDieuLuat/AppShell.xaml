@@ -86,11 +86,11 @@
     </FlyoutItem>
     <!-- <FlyoutItem Title="Tra cứu" Icon="icon_book.png">
         <ShellContent  ContentTemplate="{DataTemplate local:tracuu}" />
-    </FlyoutItem>
+    </FlyoutItem> -->
     <FlyoutItem Title="Về chúng tôi" Icon="icon_user.png">
         <ShellContent  ContentTemplate="{DataTemplate local:Nhom10}" />
     </FlyoutItem>
-    <FlyoutItem Title="Khôi phục cài đặt gốc" Icon="datlai.png">
+    <!-- <FlyoutItem Title="Khôi phục cài đặt gốc" Icon="datlai.png">
         <ShellContent  ContentTemplate="{DataTemplate local:pagereset}" />
     </FlyoutItem> -->
     
