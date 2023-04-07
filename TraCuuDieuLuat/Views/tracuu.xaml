@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TraCuuDieuLuat.Views.tracuu"
+             Title="Tra cứu"
+             IconImageSource="xamarin_logo.png">
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Text="Thêm điều luật" Clicked="ToolbarItem_Clicked"/>
+        </ContentPage.ToolbarItems>
+        <StackLayout>
+            <SearchBar Placeholder="tìm kiếm ..." TextChanged="SearchBar_TextChanged"/>
+            <CollectionView x:Name="myCollectionView"
+                            SelectionMode="Single"
+                            Margin="14,5,14,0" >
+                <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView >
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem  Text="Xem"  BackgroundColor="DarkCyan"                                               
+                                                        IconImageSource="icon_feed.png" 
+                                                        CommandParameter="{Binding .}"
+                                                        Invoked="SwipeItem_Invoked_2"/>
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <SwipeView.LeftItems>
+                            <SwipeItems>
+                                <SwipeItem  Text="Xóa"                                                    
+                                                        BackgroundColor="IndianRed"
+                                                        CommandParameter="{Binding .}"
+                                                        Invoked="SwipeItem_Invoked_1"/>
+                                <SwipeItem  Text="Sửa"  
+                                                        BackgroundColor="DarkSlateBlue"
+                                                        CommandParameter="{Binding .}"
+                                                        Invoked="SwipeItem_Invoked"/>
+                            </SwipeItems>
+                        </SwipeView.LeftItems>
+                        <StackLayout Padding="14">
+                                <Label Text="{Binding Dieu}" 
+                                    Grid.Row="0"
+                                    LineBreakMode="NoWrap" 
+                                    FontAttributes="Bold"
+                                    Style="{DynamicResource ListItemTextStyle}" 
+                                    FontSize="16" />
+                                <Label Text="{Binding Khoan}" 
+                                    
+                                    Grid.Row="0"
+                                    LineBreakMode="NoWrap" 
+                                    Style="{DynamicResource ListItemTextStyle}" 
+                                    FontSize="15" />
+                                <Label Text="{Binding NDKhoan}" 
+                                    LineBreakMode="TailTruncation"
+                                    Style="{DynamicResource ListItemDetailTextStyle}"
+                                    FontSize="14" />
+                                
+                            </StackLayout>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+</ContentPage>
