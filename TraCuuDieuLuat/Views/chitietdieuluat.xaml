@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TraCuuDieuLuat.Views.chitietdieuluat"
+             Title="Chi tiết điều luật">
+    <ScrollView>
+        <StackLayout AutomationId="true" Spacing="20" Padding="15">
+            <Image Source="logo_docpage.png" WidthRequest="100"  Margin="0 ,-10, 0,0 "  />
+            <Label Text="Chương: " FontSize="Medium" FontAttributes="Bold" />
+            <Label x:Name="Chuong"  FontSize="Small"/>
+            <Label Text="Nội dung chương:" FontSize="Medium" FontAttributes="Bold" />
+            <Label x:Name="NDChuong"  FontSize="Small"/>
+            <Label Text="Thuộc Điều: " FontSize="Medium" FontAttributes="Bold" />
+            <Label x:Name="Dieu"  FontSize="Small"/>
+            <Label Text="Nội dung điều:" FontSize="Medium" FontAttributes="Bold" />
+            <Label x:Name="NDDieu"  FontSize="Small"/>
+            <Label Text="Khoản: " FontSize="Medium" FontAttributes="Bold" />
+            <Label x:Name="Khoan"  FontSize="Small"/>
+            <Label Text="Nội dung khoản:" FontSize="Medium" FontAttributes="Bold" />
+            <Label x:Name="NDKhoan"  FontSize="Small"/>
+            <Grid>
+                <Label Text="Mức phạt thấp nhất:" FontSize="Medium" FontAttributes="Bold" />
+                <Label Grid.Column="1" x:Name="phatduoi"  FontSize="Medium" />
+            </Grid>
+            <Grid>
+                <Label Text="Mức phạt cao nhất:" FontSize="Medium" FontAttributes="Bold" />
+                <Label Grid.Column="1" x:Name="phattren"  FontSize="Medium" />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
