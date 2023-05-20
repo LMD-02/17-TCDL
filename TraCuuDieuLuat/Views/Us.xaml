@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TraCuuDieuLuat.Views.Nhom10"
+             x:Class="TraCuuDieuLuat.Views.Us"
              Title="Về chúng tôi">
     <ContentPage.Content>
         <StackLayout>
             <Image Source="admin.png" WidthRequest="320" />
-            <Label Text="Nhóm 10" Margin="0, -40, 0, 14"
+            <Label Text="Kỹ thuật viên" Margin="0, -40, 0, 14"
                    FontSize="20" FontAttributes="Bold"
                    HorizontalOptions="CenterAndExpand" />
             <Grid WidthRequest="200"  HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="-40,0,0,0" >
@@ -19,7 +19,7 @@
                     VerticalOptions="Center"
                        Margin="-60,0,0,0" Padding="0,8,0,0"/>
                 <Image WidthRequest="50" Grid.Row="2" Grid.Column="0" Source="icon_female.png"  />
-                <Label Grid.Row="2" Grid.Column="1" Text="Nguyễn Thị Hồng Hành " FontSize="14"
+                <Label Grid.Row="2" Grid.Column="1" Text="Nguyễn Thị Hồng Hạnh " FontSize="14"
                     VerticalOptions="Center"
                        Margin="-60,0,0,0" Padding="0,8,0,0"/>
             </Grid>

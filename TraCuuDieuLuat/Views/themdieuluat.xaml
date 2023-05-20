@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TraCuuDieuLuat.Views.themdieuluat"
+             Title="Thêm điều luật">
+
+    <ContentPage.Content>
+        <StackLayout Margin="20" Padding="5,10,10,0" Spacing="20">
+            <Image Source="logo_editpage.png" WidthRequest="90" Margin="0 ,-10, 0,0 "  />
+            <Entry Placeholder="Chương" 
+                   x:Name="Chuong" 
+                   />
+            <Entry Placeholder="Nội dung chương" 
+                   x:Name="NDChuong"                  
+                   />
+            <Entry Placeholder="Điều" 
+                   x:Name="Dieu" 
+                   />
+            <Entry Placeholder="Nội dung điều" 
+                   x:Name="NDDieu" 
+                   />
+            <Entry Placeholder="Khoản" 
+                   x:Name="Khoan" 
+                   />
+            <Entry Placeholder="Nội dung Khoản" 
+                   x:Name="NDKhoan" 
+                   />
+            <Entry Placeholder="Mức phạt thấp nhất" 
+                   x:Name="Phatduoi" 
+                   />
+            <Entry Placeholder="Mức phạt cao nhất" 
+                   x:Name="Phattren" 
+                   />
+            <Button Text="Lưu" BackgroundColor="#1ead6e" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

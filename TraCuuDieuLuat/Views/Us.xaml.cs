@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace TraCuuDieuLuat.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Nhom10 : ContentPage
+    public partial class Us : ContentPage
     {
-        public Nhom10()
+        public Us()
         {
             InitializeComponent();
         }

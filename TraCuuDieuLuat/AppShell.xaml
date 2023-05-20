@@ -84,15 +84,15 @@
     <FlyoutItem Title="Trang chủ" Icon="icon_homepage.png">
         <ShellContent  ContentTemplate="{DataTemplate local:Homepage}" />
     </FlyoutItem>
-    <!-- <FlyoutItem Title="Tra cứu" Icon="icon_book.png">
+     <FlyoutItem Title="Tra cứu" Icon="icon_book.png">
         <ShellContent  ContentTemplate="{DataTemplate local:tracuu}" />
-    </FlyoutItem> -->
-    <FlyoutItem Title="Về chúng tôi" Icon="icon_user.png">
-        <ShellContent  ContentTemplate="{DataTemplate local:Nhom10}" />
     </FlyoutItem>
-    <!-- <FlyoutItem Title="Khôi phục cài đặt gốc" Icon="datlai.png">
-        <ShellContent  ContentTemplate="{DataTemplate local:pagereset}" />
-    </FlyoutItem> -->
+    <FlyoutItem Title="Về chúng tôi" Icon="icon_user.png">
+        <ShellContent  ContentTemplate="{DataTemplate local:Us}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Khôi phục cài đặt gốc" Icon="datlai.png">
+                <ShellContent  ContentTemplate="{DataTemplate local:pagereset}" />
+    </FlyoutItem>
     
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

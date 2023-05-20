@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Khôi phục cài đặt gốc"
+             x:Class="TraCuuDieuLuat.Views.pagereset">
+    <ContentPage.Content>
+        <StackLayout Margin="40" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image  Source="canhbao.png"  />
+            <Label Text="Cảnh báo !!!"
+                   Margin="0,-40,0,0"
+                   TextColor="IndianRed"
+                 FontSize="20" FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Hành động này sẽ làm cho toàn bộ điều luật trong ứng dụng của bạn trở về lại cài đặt gốc."
+                 FontSize="15"
+                   
+                HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/>
+            <Label Margin="0,15,0,0" Text="Bạn có chắc chắn không ?"
+                 FontSize="15" FontAttributes="Bold"
+                   
+                HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/>
+            <Button Margin="30,140,30,0" BackgroundColor= "OrangeRed"  Text="Đồng ý" Clicked="Button_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
